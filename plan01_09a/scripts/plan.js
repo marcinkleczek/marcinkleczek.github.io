@@ -71,6 +71,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 	const theme = getTheme();
 	document.querySelectorAll("a").forEach(a => a.href += '?theme=' + theme);
+	let vp = document.createElement("meta");
+	vp.setAttribute("name", "viewport");
+	vp.setAttribute("content", "width=device-width, initial-scale=1");
+	document.querySelector('head').appendChild(vp);
 
 	fetch('../scripts/plans.json').then(j => j.json()).then(createSelect);
 	fetch('../scripts/themes.json').then(j => j.json()).then(createThemes);
