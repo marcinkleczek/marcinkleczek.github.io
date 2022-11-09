@@ -12,7 +12,7 @@ function createSelect(options) {
 		select.appendChild(option);
 	}
 	select.addEventListener('change', (e) => {
-		this.location = select.value;
+		this.location = select.value + '?theme=' + getTheme();
 	});
 
 	let body = document.querySelector('body');
@@ -69,10 +69,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	});
 	document.body.appendChild(g);
 
+	const theme = getTheme();
+	document.querySelectorAll("a").forEach(a => a.href += '?theme=' + theme);
+
 	fetch('../scripts/plans.json').then(j => j.json()).then(createSelect);
 	fetch('../scripts/themes.json').then(j => j.json()).then(createThemes);
-
-	const theme = getTheme();
 
 	if (theme) {
 		let link = document.createElement('link');
