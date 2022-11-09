@@ -1,0 +1,180 @@
+@media screen and (min-width: 700px) {
+    .grider {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 700px) {
+
+    table table {
+        display: none;
+    }
+
+    .grider {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .grider div:empty {
+        /*display: none;*/
+    }
+    .grider div {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .grider div:nth-child(7n+1),
+    .grider div:nth-child(7n+2)
+    {
+        display: none;
+    }
+    .old-th {
+        font-size: 19px;
+    }
+
+
+    .grider div:nth-child(7n+1) {
+        order: 1;
+    }
+    .grider div:nth-child(7n+2) {
+        order: 2;
+    }
+    .grider div:nth-child(7n+3) {
+        order: 3;
+    }
+    .grider div:nth-child(7n+4) {
+        order: 4;
+    }
+    .grider div:nth-child(7n+5) {
+        order: 5;
+    }
+    .grider div:nth-child(7n+6) {
+        order: 6;
+    }
+    .grider div:nth-child(7n) {
+        order: 7;
+    }
+
+
+    .grider time {
+        width: 25%;
+    }
+    .grider article {
+        display: flex;
+        width: 75%;
+    }
+    .grider article .n {
+        flex-grow: 0;
+        flex-basis: 20%;
+        text-align: center;
+    }
+    .grider article .s {
+        flex-basis: 20%;
+        flex-grow: 0;
+        text-align: center;
+    }
+    .grider article .p {
+        flex-grow: 6;
+        text-align: right;
+    }
+
+
+
+    .grider {
+        font-family: Garamond, sans-serif;
+        font-weight: 500;
+    }
+    .old-th time {
+        display: none;
+    }
+    .old-th article {
+        /*background-color: red;*/
+        padding-top: 20px;
+        display: block;
+        text-align: right;
+        padding-right: 20px;
+        font-size: 1.75rem;
+        line-height: 3rem;
+    }
+    .grider time {
+        color: #aaa;
+        font-style: italic;
+    }
+    .old-td + .old-td {
+        /*border-top: 1px solid #ddd;*/
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+    }
+}
+
+/* some minor tweaks */
+caption {
+    text-align: center;
+    width: 100%;
+}
+form {
+    min-width: 300px;
+    margin: auto;
+    width: 50vw;
+    text-align: center;
+}
+body > div > table {
+    width: 100%;
+}
+body > div > table table {
+    margin: auto;
+}
+
+
+
+/* kolory */
+.p-j-angielski, .p-r_angielski {
+    color: red;
+}
+.p-geografia, .p-r_geografia {
+    color: rgb(0, 177, 0);
+}
+.p-j-polski {
+    color: rgb(255, 153, 0);
+}
+.p-matematyka, .p-r_matematyka {
+    color: rgb(48, 117, 245);
+}
+.p-u_hist-isp- {
+    color: rgb(218, 164, 121);
+}
+
+.s {
+    color: rgb(200, 203, 240);
+}
+.n {
+    color: rgb(133, 135, 148);
+    text-decoration: none;
+    text-align: right;
+}
+
+/* 8.11.2022 */
+td, th {
+    color: #ddd;
+}
+td.l, .old-td, .old-th {
+    font-weight: 100;
+    padding: 5px;
+    text-shadow: black 0 3px 5px;
+    color:rgb(169, 180, 185);
+}
+
+table, .grider {
+    border: none;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(43,43,43,1) 25%, rgba(31,31,31,1) 51%, rgba(53,53,53,1) 68%, rgba(11,11,11,1) 100%);
+    border: 3px solid rgb(133, 135, 148);
+    border-collapse: collapse;
+    font-family: 'Segoe UI';
+}
+
+.old-td, .old-th {
+    border-bottom: 1px solid rgb(133, 135, 148);
+}

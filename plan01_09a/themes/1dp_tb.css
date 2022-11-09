@@ -1,0 +1,208 @@
+@media screen and (min-width: 700px) {
+    .grider {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 700px) {
+
+    table table {
+        display: none;
+    }
+
+    .grider {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .grider div:empty {
+        /*display: none;*/
+    }
+    .grider div {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .grider div:nth-child(7n+1),
+    .grider div:nth-child(7n+2)
+    {
+        display: none;
+    }
+    .old-th {
+        font-size: 19px;
+    }
+
+
+    .grider div:nth-child(7n+1) {
+        order: 1;
+    }
+    .grider div:nth-child(7n+2) {
+        order: 2;
+    }
+    .grider div:nth-child(7n+3) {
+        order: 3;
+    }
+    .grider div:nth-child(7n+4) {
+        order: 4;
+    }
+    .grider div:nth-child(7n+5) {
+        order: 5;
+    }
+    .grider div:nth-child(7n+6) {
+        order: 6;
+    }
+    .grider div:nth-child(7n) {
+        order: 7;
+    }
+
+
+    .grider time {
+        width: 25%;
+    }
+    .grider article {
+        display: flex;
+        width: 75%;
+    }
+    .grider article .n {
+        flex-grow: 0;
+        flex-basis: 20%;
+        text-align: center;
+    }
+    .grider article .s {
+        flex-basis: 20%;
+        flex-grow: 0;
+        text-align: center;
+    }
+    .grider article .p {
+        flex-grow: 6;
+        text-align: right;
+    }
+
+
+
+    .grider {
+        font-family: Garamond, sans-serif;
+        font-weight: 500;
+    }
+    .old-th time {
+        display: none;
+    }
+    .old-th article {
+        /*background-color: red;*/
+        padding-top: 20px;
+        display: block;
+        text-align: right;
+        padding-right: 20px;
+        font-size: 1.75rem;
+        line-height: 3rem;
+    }
+    .grider time {
+        color: #aaa;
+        font-style: italic;
+    }
+    .old-td + .old-td {
+        border-top: 1px solid #ddd;
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+    }
+}
+
+/* some minor tweaks */
+caption {
+    text-align: center;
+    width: 100%;
+}
+form {
+    min-width: 300px;
+    margin: auto;
+    width: 50vw;
+    text-align: center;
+}
+body > div > table {
+    width: 100%;
+}
+body > div > table table {
+    margin: auto;
+}
+
+
+
+/* Only as example */
+.p-j-angielski, .p-r_angielski {
+    color: #1b9448;
+}
+.p-geografia, .p-r_geografia {
+    color: blueviolet;
+}
+
+.n {
+    color: #000;
+    text-decoration: none;
+    text-align: right;
+}
+td {
+    border: navy solid;
+}
+caption {
+font-family: 'Times New Roman';
+color: green;
+background-color: rgba(11,54,62,1);
+}
+th{
+    color: gray;
+    font-size: large;
+    border: 1mm solid rgba(50, 81, 220, 0.6);
+    padding: 1em;
+}
+table {
+    border-collapse: collapse;
+    background: rgb(159,33,42);
+    background: linear-gradient(90deg, rgba(159,33,42,1) 7%, rgba(134,45,55,1) 11%, rgba(134,45,55,1) 12%, rgba(99,61,73,1) 17%, rgba(9,103,121,1) 36%, rgba(11,54,62,1) 74%);
+    border: navy solid;
+    padding: 1em;
+    border:rgba(9, 21, 73, 0.6) 1rem solid;
+    font-family:'Times New Roman';
+}
+p {
+    font-family: 'Times New Roman';
+    border: solid;
+    color: white;
+}
+ a{
+    font-family: 'Franklin Gothic Medium';
+    color:black;
+ }
+ tr  th{
+    color: red;
+ }
+ .g{
+    color: maroon;
+    font-size:large;
+    background-color:silver;
+ }
+ .nr {
+    font-size: large;
+    color: maroon;
+    background-color: #aaa;
+ }
+ tr th {
+    background-color: white;
+ }
+ .grider{
+border: solid black;
+background-color:rgba(9,103,121,1);
+ }
+ .p-religia{
+    color: orange;
+ }
+.matematyka{
+    color: navy;
+}
+
+ 
+    
+ 
+
