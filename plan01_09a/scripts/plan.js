@@ -12,7 +12,7 @@ function createSelect(options) {
 		select.appendChild(option);
 	}
 	select.addEventListener('change', (e) => {
-		this.location = select.value;
+		this.location = select.value + '?theme=' + getTheme();
 	});
 
 	let body = document.querySelector('body');
@@ -22,7 +22,7 @@ function createSelect(options) {
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
-	// document.querySelectorAll('style, link[rel="stylesheet"], td.op').forEach(element => element.parentNode.removeChild(element));
+	document.querySelectorAll('style, link[rel="stylesheet"], td.op').forEach(element => element.parentNode.removeChild(element));
 	document.querySelectorAll('style, td.op').forEach(element => element.parentNode.removeChild(element));
 	document.querySelectorAll('div[align="center"]').forEach(element => element.removeAttribute('align'));
 	document.querySelectorAll('table').forEach(table => table.removeAttribute('cellpadding') || table.removeAttribute('cellspacing'));
@@ -62,7 +62,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				let ps = td.querySelectorAll(".p");
 				let p = ps[0];
 
-				// console.dir(p.innerText.indexOf("/"));
 				if (p.innerText.indexOf("/") >= 0) {
 					p = ps[1];
 				}
