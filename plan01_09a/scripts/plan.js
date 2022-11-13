@@ -106,6 +106,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		link.href = '../themes/'+ theme;
 
 		document.querySelector('head').appendChild(link);
+		document.querySelectorAll('a').forEach(a => {
+			a.href += '?theme=' + theme;
+		})
 	}
 });
 
