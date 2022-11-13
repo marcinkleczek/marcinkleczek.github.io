@@ -100,12 +100,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 	const theme = getTheme();
 
+	let head = document.querySelector('head');
+	let mv = document.createElement('meta');
+	mv.name = "viewport";
+	mv.content = "width=device-width, initial-scale=1";
+	head.appendChild(mv);
+
 	if (theme) {
 		let link = document.createElement('link');
 		link.rel = 'stylesheet';
 		link.href = '../themes/'+ theme;
 
-		document.querySelector('head').appendChild(link);
+		head.appendChild(link);
 		document.querySelectorAll('a').forEach(a => {
 			a.href += '?theme=' + theme;
 		})
