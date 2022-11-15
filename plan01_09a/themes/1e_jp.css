@@ -1,0 +1,122 @@
+@media screen and (min-width: 1000px) {
+    .grider {
+        display: none !important;
+    }
+}
+*{
+    transition: 100ms;
+}
+@media screen and (max-width: 1000px) {
+
+    table table {
+        display: none;
+    }
+
+    .grider {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .old-th article {
+        /*background-color: red;*/
+        padding-top: 20px;
+        display: block;
+        text-align: right;
+        padding-right: 20px;
+        font-size: 1.75rem;
+        line-height: 3rem;
+    }
+    .grider time {
+        color: #aaa;
+        font-style: italic;
+    }
+    .old-td + .old-td {
+        border-top: none;
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+    }
+}
+.tabela {
+    border-collapse: collapse;
+    margin-left: 400px ;
+    margin-top: 5px;
+    margin-right: 400px;
+    font-size: 0.9em;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    border: none;
+}
+th{
+    background-color: #a39d9d;
+    height: 30px;
+    width: 30px;
+    width: 50px;
+    font-size: 1.1em;
+    border-radius: 9.5px;
+}
+.nr {
+    background-color: #a39d9d;
+    width: 30px;
+    width: 50px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 9.5px;
+}
+.l {
+    background-color: rgb(196, 188, 188);
+    height: 30px;
+    width: 180px;
+    color: black;
+}
+.g {
+    background-color: rgb(196, 188, 188);
+    height: 30px;
+    width: 140px;
+    font-size: 1.1em;
+}
+.o , .s {
+    color: black;
+    font-size: 1.1em;
+    
+}
+.p {
+    font-size: 1em;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.l:hover{
+    background-image: linear-gradient(to center, rgb(66, 66, 66));
+    transform: matrix(0.5s);
+    color: black;
+    font-size: 19px;
+}
+.o:hover{
+    background-image: linear-gradient(to center, rgb(66, 66, 66));
+    transform: matrix(0.5s);
+    color: black;
+    font-size: 19px;
+}
+.nr:hover{
+    background-image: linear-gradient(to center, rgb(66, 66, 66));
+    transform: matrix(0.5s);
+    color: black;
+    font-size: 19px;
+}
+.s:hover{
+    background-image: linear-gradient(to center, rgb(66, 66, 66));
+    transform: matrix(0.5s);
+    color: black;
+    font-size: 19px;
+}
+.g:hover{
+    background-image: linear-gradient(to center, rgb(66, 66, 66));
+    transform: matrix(0.5s);
+    color: black;
+    font-size: 19px;
+}
+th:hover{
+    background-image: linear-gradient(to center, rgb(66, 66, 66));
+    transform: matrix(0.5s);
+    color: black;
+    font-size: 19px;
+}

@@ -1,0 +1,236 @@
+@media screen and (min-width: 700px) {
+    .grider {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 700px) {
+
+    table table {
+        display: none;
+        
+    }
+
+    .tytulnapis {
+        
+    }
+
+    .grider {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .grider div:empty {
+        /*display: none;*/
+    }
+    .grider div {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .grider div:nth-child(7n+1),
+    .grider div:nth-child(7n+2)
+    {
+        display: none;
+    }
+    .old-th {
+        font-size: 19px;
+
+    }
+
+
+    .grider div:nth-child(7n+1) {
+        order: 1;
+    
+    }
+    .grider div:nth-child(7n+2) {
+        order: 2;
+    }
+    .grider div:nth-child(7n+3) {
+        order: 3;
+    }
+    .grider div:nth-child(7n+4) {
+        order: 4;
+    }
+    .grider div:nth-child(7n+5) {
+        order: 5;
+    }
+    .grider div:nth-child(7n+6) {
+        order: 6;
+    }
+    .grider div:nth-child(7n) {
+        order: 7;
+    }
+
+
+    .grider time {
+        width: 25%;
+    }
+    .grider article {
+        display: flex;
+        width: 75%;
+    }
+    .grider article .n {
+        flex-grow: 0;
+        flex-basis: 20%;
+        text-align: center;
+    }
+    .grider article .s {
+        flex-basis: 20%;
+        flex-grow: 0;
+        text-align: center;
+    }
+    .grider article .p {
+        flex-grow: 6;
+        text-align: right;
+    }
+
+
+
+    .grider {
+        font-family: Garamond, sans-serif;
+        font-weight: 500;
+    }
+    .old-th time {
+        display: none;
+    }
+    .old-th article {
+        /*background-color: red;*/
+        padding-top: 20px;
+        display: block;
+        text-align: right;
+        padding-right: 20px;
+        font-size: 1.75rem;
+        line-height: 3rem;
+    }
+    .grider time {
+        color: #aaa;
+        font-style: italic;
+    }
+    .old-td + .old-td {
+        border-top: 1px solid #ddd;
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+    }
+}
+
+/* some minor tweaks */
+caption {
+    text-align: center;
+    width: 100%;
+}
+form {
+    min-width: 300px;
+    margin: auto;
+    width: 50vw;
+    text-align: center;
+}
+body > div > table {
+    width: 100%;
+}
+body > div > table table {
+    margin: auto;
+}
+
+
+
+/* Only as example */
+
+
+html {
+    background-image: url('https://cdn.pixabay.com/photo/2020/06/28/07/17/lavender-5348160_960_720.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+ 
+
+.n {
+   
+    text-decoration: none;
+    text-align: right;
+}
+
+.tabela {
+    background-color:#EE82EE;
+    border: 2px solid #9400D3 ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+caption {
+    
+    font-size: 30px;
+    background-color:#9400D3	 ;
+    color: black;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: 2px solid #9400D3 ;
+
+}
+
+.nr
+{
+    background-color:#9400D3;
+    color: black;
+    text-align: center;
+    border: 2px solid #9400D3 ;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    
+}
+
+
+
+.g {
+    background-color: #BA55D3;
+    text-align: center;
+    border: 2px solid #9400D3 ;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+
+
+th {
+    background-color: #9400D3;
+    border: 2px solid #9400D3 ;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.l {
+    font-style: oblique;
+    text-align: center;
+    border: 2px solid #9400D3 ;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 16px;
+    
+}
+
+

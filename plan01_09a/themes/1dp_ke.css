@@ -1,0 +1,188 @@
+@media screen and (min-width: 700px) {
+  .grider {
+    display: none !important;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #666666;
+  }
+  table {
+    font-family: sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 4px 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  th {
+    background-color: rgba(51, 51, 51, 0.692);
+    color: #fff;
+    padding: 10px;
+  }
+  td {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: #66666693;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #666666;
+  }
+  a:active {
+    display: inline-block;
+    padding: 0px;
+    background-color: #66666693;
+    border-radius: 5px;
+  }
+
+  tbody {
+    color: #555;
+  }
+  caption {
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 2px 2px;
+    font-size: 60px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 700px) {
+  table table {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+    color: #66666693;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: #666666;
+  }
+  a:active {
+    display: inline-block;
+    padding: 0px;
+    background-color: #66666693;
+    border-radius: 5px;
+  }
+
+  .grider {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .grider div:empty {
+    display: none;
+  }
+  .grider div {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  .grider div:nth-child(7n + 1),
+  .grider div:nth-child(7n + 2) {
+    display: none;
+  }
+  .old-th {
+    font-size: 19px;
+    background-color: #333;
+    color: #fff;
+  }
+
+  .grider div:nth-child(7n + 1) {
+    order: 1;
+  }
+  .grider div:nth-child(7n + 2) {
+    order: 2;
+  }
+  .grider div:nth-child(7n + 3) {
+    order: 3;
+  }
+  .grider div:nth-child(7n + 4) {
+    order: 4;
+  }
+  .grider div:nth-child(7n + 5) {
+    order: 5;
+  }
+  .grider div:nth-child(7n + 6) {
+    order: 6;
+  }
+  .grider div:nth-child(7n) {
+    order: 7;
+  }
+
+  .grider time {
+    width: 25%;
+  }
+  .grider article {
+    display: flex;
+    width: 75%;
+  }
+  .grider article .n {
+    flex-grow: 0;
+    flex-basis: 20%;
+    text-align: center;
+  }
+  .grider article .s {
+    flex-basis: 20%;
+    flex-grow: 0;
+    text-align: center;
+  }
+  .grider article .p {
+    flex-grow: 6;
+    text-align: right;
+  }
+
+  .grider {
+    font-family: Garamond, sans-serif;
+    font-weight: 500;
+  }
+  .old-th time {
+    display: none;
+  }
+  .old-th article {
+    padding-top: 20px;
+    display: table-caption;
+    text-align: center;
+    padding-right: 20px;
+    font-size: 1.75rem;
+    line-height: 3rem;
+  }
+  .grider time {
+    color: #aaa;
+    font-style: italic;
+  }
+  .old-td + .old-td {
+    border-top: 1px solid #ddd;
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+    display: flex;
+    flex-direction: row;
+  }
+  caption {
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 2px 2px;
+    font-size: 60px;
+    font-family: sans-serif;
+    display: block;
+  }
+}
+body {
+  display: flex;
+  background-color: #66666693;
+}
+/* some minor tweaks */
