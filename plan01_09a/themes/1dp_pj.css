@@ -1,0 +1,327 @@
+ 
+@media screen and (min-width: 700px) {
+    .grider {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 700px) {
+ 
+    table table {
+        display: none;
+ 
+    }
+ 
+    .grider {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+ 
+    .grider div:empty {
+        /*display: none;*/
+    }
+    .grider div {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+ 
+    .grider div:nth-child(7n+1),
+    .grider div:nth-child(7n+2)
+    {
+        display: none;
+    }
+    .old-th {
+        font-size: 19px;
+    }
+ 
+ 
+    .grider div:nth-child(7n+1) {
+        order: 1;
+    }
+    .grider div:nth-child(7n+2) {
+        order: 2;
+    }
+    .grider div:nth-child(7n+3) {
+        order: 3;
+    }
+    .grider div:nth-child(7n+4) {
+        order: 4;
+    }
+    .grider div:nth-child(7n+5) {
+        order: 5;
+    }
+    .grider div:nth-child(7n+6) {
+        order: 6;
+    }
+    .grider div:nth-child(7n) {
+        order: 7;
+    }
+ 
+ 
+    .grider time {
+        width: 25%;
+    }
+    .grider article {
+        display: flex;
+        width: 75%;
+    }
+    .grider article .n {
+        flex-grow: 0;
+        flex-basis: 20%;
+        text-align: center;
+    }
+    .grider article .s {
+        flex-basis: 20%;
+        flex-grow: 0;
+        text-align: center;
+    }
+    .grider article .p {
+        flex-grow: 6;
+        text-align: right;
+    }
+ 
+ 
+ 
+    .grider {
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        font-weight: 500;
+    }
+    .old-th time {
+        display: none;
+    }
+    .old-th article {
+        /*background-color: red;*/
+        padding-top: 20px;
+        display: block;
+        text-align: right;
+        padding-right: 20px;
+        font-size: 1.75rem;
+        line-height: 3rem;
+    }
+    .grider time {
+        color: #aaa;
+        font-style: italic;
+    }
+    .old-td + .old-td {
+        border-top: 1px solid #ddd;
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+    }
+}
+ 
+/* some minor tweaks */
+caption {
+    text-align: center;
+    width: 100%;
+}
+form {
+    min-width: 300px;
+    margin: auto;
+    width: 50vw;
+    text-align: center;
+}
+body > div > table {
+    width: 100%;
+}
+body > div > table table {
+    margin: auto;
+}
+ 
+ 
+ 
+/* Only as example */
+.p-j-angielski, .p-r_angielski {
+    color: #ffffff;
+}
+.p-geografia, .p-r_geografia {
+    color: rgb(253, 253, 253);
+}
+ 
+.n {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: right;
+}
+ 
+body {
+   background-color: rgb(31, 30, 30);
+   color: white;
+   font-family: 'Poppins', sans-serif;
+   font-family: 'Roboto Slab', serif;
+   font-family: 'Xanh Mono', monospace;
+ 
+}
+ 
+table {
+    border-collapse: collapse;
+    
+
+}
+ 
+ 
+select {
+    margin-top: 10px;
+    background-color: rgb(66, 63, 63);
+    color: white;
+    -webkit-box-shadow: 0px 0px 30px 3px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 0px 30px 3px rgb(0, 0, 0);
+    box-shadow: 0px 0px 30px 3px rgb(0, 0, 0); 
+    border-radius: 8px;
+ 
+}
+ 
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #ffffff;
+  }
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+ 
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+ 
+  *::-webkit-scrollbar-thumb {
+    background-color: #3377df;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+ 
+  a {
+    color: rgb(48, 112, 231);
+    text-decoration: none;
+  }
+ 
+  a:hover {
+    text-decoration: underline;
+ }
+ 
+th {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    text-align: center;
+    border: 0px;
+    border: 1px solid white;
+    
+    
+}
+ 
+ 
+td{
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    text-align: center;
+
+}
+ 
+caption {
+    font-size: 30px;
+ 
+}
+ 
+ 
+table table {
+    background-color: rgb(40, 39, 41);
+    -webkit-box-shadow: 0px 0px 30px 3px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 0px 30px 3px rgb(0, 0, 0);
+    box-shadow: 0px 0px 30px 3px rgb(0, 0, 0); 
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 20px;
+  
+} 
+
+
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+tbody{
+    background-color: transparent;
+}
+
+
+a {
+    color: rgb(160, 201, 255);
+}
+
+
+
+.l{
+    border: 1px solid white;
+}
+
+
+.g{
+    border: 1px solid white;
+}
+
+
+.nr{
+    border: 1px solid white;
+    
+}
+
+.nr9 {
+    border: 1px solid white;
+    border-bottom-left-radius: 20px;
+}
+
+.nr0 {
+    border: 1px solid white;
+    border-top-left-radius: 20px;
+}
+
+
+.nrp {
+    border: 1px solid white;
+    border-top-right-radius: 20px;
+}
+
+.l0 {
+    border: 1px solid white;
+    border-bottom-right-radius: 20px;
+}
+
+
+.to {
+    background-color: rgb(40, 39, 41) ;
+    border: 1px solid white;
+    border-radius: 20px;
+    border-collapse: separate;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    -webkit-box-shadow: 0px 0px 20px 3px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 0px 20px 3px rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px 3px rgb(0, 0, 0); 
+}
+
+caption {
+    margin-top: 15px;
+}

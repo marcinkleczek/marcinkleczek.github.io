@@ -1,0 +1,403 @@
+@media screen and (min-width: 700px) {
+    .grider {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 700px) {
+
+    table table {
+        display: none;
+    }
+
+    .grider {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .grider div:empty {
+        /* display: none; */
+    }
+    .grider div {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .grider div:nth-child(7n+1),
+    .grider div:nth-child(7n+2)
+    {
+        display: none;
+    }
+    .old-th {
+        font-size: 19px;
+    }
+
+
+    .grider div:nth-child(7n+1) {
+        order: 1;
+    }
+    .grider div:nth-child(7n+2) {
+        order: 2;
+    }
+    .grider div:nth-child(7n+3) {
+        order: 3;
+    }
+    .grider div:nth-child(7n+4) {
+        order: 4;
+    }
+    .grider div:nth-child(7n+5) {
+        order: 5;
+    }
+    .grider div:nth-child(7n+6) {
+        order: 6;
+    }
+    .grider div:nth-child(7n) {
+        order: 7;
+    }
+
+
+    .grider time {
+        width: 25%;
+    }
+    .grider article {
+        display: flex;
+        width: 75%;
+    }
+    .grider article .n {
+        flex-grow: 0;
+        flex-basis: 20%;
+        text-align: center;
+    }
+    .grider article .s {
+        flex-basis: 20%;
+        flex-grow: 0;
+        text-align: center;
+    }
+    .grider article .p {
+        flex-grow: 6;
+        text-align: right;
+    }
+
+
+
+    .grider {
+        font-family: Garamond, sans-serif;
+        font-weight: 500;
+    }
+    .old-th time {
+        display: none;
+    }
+    .old-th article {
+        /* background-color: red; */
+        padding-top: 20px;
+        display: block;
+        text-align: right;
+        padding-right: 20px;
+        font-size: 1.75rem;
+        line-height: 3rem;
+    }
+    .grider time {
+        color: #aaa;
+        font-style: italic;
+    }
+    .old-td + .old-td {
+        border-top: 1px solid #ddd;
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+    }
+}
+
+/* some minor tweaks */
+caption {
+    text-align: center;
+    width: 100%;
+}
+form {
+    min-width: 300px;
+    margin: auto;
+    width: 50vw;
+    text-align: center;
+}
+body > div > table {
+    width: 100%;
+}
+body > div > table table {
+    margin: auto;
+}
+
+
+
+/* Only as example
+.p-j-angielski, .p-r_angielski {
+    color: #1b9448;
+}
+.p-geografia, .p-r_geografia {
+    color: blueviolet;
+} */
+
+
+
+
+
+.tabela {
+    font-size: 16px;
+    border-collapse: collapse;   
+    width: 1450px;
+
+}
+caption {
+    color: white;
+    font-size: 20px;
+}
+body{
+    background: linear-gradient(to bottom, #4f52f0 0%, #d2d6fa 100%);
+}
+th{
+    line-height: 30px;
+    
+    /* font-size: 18px; */
+}
+th:nth-child(1){
+    width: 3%;
+}
+th:nth-child(2){
+    width: 10%;
+}
+th:nth-child(3){
+    width: 15%;
+}
+th:nth-child(4){
+    width: 15%;
+}
+th:nth-child(5){
+    width: 15%;
+}
+th:nth-child(6){
+    width: 15%;
+}
+th:nth-child(7){
+    width: 15%;
+}
+
+
+a {
+ padding-right: 3px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+span.p {
+ 
+    
+    padding-left: 5px;
+   
+}
+.p-u_hist-isp-:hover::before{
+    content: "🗓️";
+}
+.p-u_hist-isp-:hover::after{
+    content: "🗓️";
+}
+
+.p-j-angielski:hover::before{
+    content: "✨";
+}
+.p-j-angielski:hover::after{
+    content: "✨";
+} 
+
+.p-pr-fin-przed:hover::before{
+    content: "📈";
+}
+.p-wf:hover::before{
+    content: "🏀";
+    }
+.p-r_matematyka:hover::before{
+content: "➕";
+}
+.p-matematyka:hover::before{
+content: "➕";
+}
+.p-religia:hover::before{
+content: " ✞ ";
+}
+.p-j-polski:hover::before{
+    content: "📖";
+}
+.p-r_geografia:hover::before{
+    content: "🌎";
+}
+.p-dok-kadr:hover::before{
+    content: "💵";
+}
+.p-fin-przeds-:hover::before{
+    content: "📊";
+}
+.p-zaj-wych-:hover::before{
+    content: "🙋🏻‍♀️🙋🏻‍♂️";
+}
+.p-pro-itw-s-i:hover::before{
+    content: "🖥️";
+}
+.p-pro-itw-s-i:hover::after{
+    content: "🖥️";
+}
+.p-pr-str-int:hover::before{
+    content: "🖥️";
+}
+.p-pr-str-int:hover::after{
+    content: "🖥️";
+}
+.p-zaj-wych-:hover::after{
+    content: "🙋🏻‍♀️🙋🏻‍♂️";
+}
+.p-fin-przeds-:hover::after{
+    content: "📊";
+}
+.p-dok-kadr:hover::after{
+    content: "💵";
+}
+.p-r_geografia:hover::after{
+    content: "🌎";
+}
+.p-j-polski:hover::after{
+    content: "📖";
+}
+.p-pr-fin-przed:hover::after{
+    content: "📈";
+}
+.p-wf:hover::after{
+    content: "🏀";
+    }
+.p-r_matematyka:hover::after{
+content: "➕";
+}
+.p-matematyka:hover::after{
+content: "➕";
+}
+.p-religia:hover::after{
+content: " ✞ ";
+}
+.l:hover {
+
+    transition-duration: 1s ;
+background-color: rgb(149, 215, 255);
+transform: scale(1.4);
+
+}
+
+
+.nr, .g {
+background-color: rgb(66, 156, 240);
+text-align: center;
+}
+th{
+background-color: rgb(66, 156, 240);
+
+}
+.g {
+    background-color: rgb(139, 199, 233);
+    font-family: 'Comfortaa', cursive;
+
+}
+caption {
+    font-family: 'Comfortaa', cursive;
+}
+.l {
+   
+    background-color: rgb(231, 252, 252);
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+a{
+    padding: 5px 5px;
+    text-decoration: none;
+    color: #4043d6;
+}
+th, .nr {
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+        /* Dodatkowy dark mode w ktorym wyłączmy wszystkie emotki bo zle to wyglada
+.nr, th:first-child {
+    text-transform: uppercase;
+    background: linear-gradient(to right, #9e0000 0%, #ff0000 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: "Poppins", sans-serif;
+}
+
+th:nth-child(2), .g {
+    background: linear-gradient(to right, #ff0000 0%, #ff7b00 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Poppins", sans-serif;
+}
+
+th:nth-child(3), .l:nth-child(3){
+    background: linear-gradient(to right, #ff7b00 0%, #fbff00 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: "Poppins", sans-serif;
+}
+th:nth-child(4), .l:nth-child(4){
+    background: linear-gradient(to right, #f9fd00 0%, #5eff00 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: "Poppins", sans-serif;
+}
+th:nth-child(5), .l:nth-child(5){
+    background: linear-gradient(to right, #00ff37 0%, #09f8bc 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: "Poppins", sans-serif;
+}
+th:nth-child(6), .l:nth-child(6){
+    background: linear-gradient(to right, #30CFD0 0%, #0011ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: "Poppins", sans-serif;
+}
+th:nth-child(7), .l:nth-child(7){
+    background: linear-gradient(to right, #5900ff 0%, #ff01f2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Poppins", sans-serif;
+        
+}
+
+.tabela{
+    background-color: black;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

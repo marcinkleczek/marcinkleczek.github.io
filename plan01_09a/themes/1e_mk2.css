@@ -1,0 +1,84 @@
+html{
+ background-image: linear-gradient(to bottom right, #11c401 , #006eff);
+ }
+ table{
+ padding: 0px;
+ margin: 0px;
+ border: 2px;
+
+ }
+ tbody{
+ padding: 0px;
+ margin: 0px;
+ float: right;
+ border: none;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ text-align: center;
+ text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.237);
+ }
+ td{
+ padding: 0px;
+ margin: 0px;
+ height: 70px;
+ width:10000px;
+ border-color: rgba(255, 255, 255, 0);
+ border-bottom: 0px;
+ border-radius: 5px;
+ border-width: 4px;
+
+
+ }
+ caption{
+ font-size: x-large;
+ font-family: Arial, Helvetica, sans-serif;
+ padding-bottom: 20px;
+ font-weight: 1000;
+ }
+ .tabela{
+ padding: 0px;
+ margin: 0px;
+ color: rgb(0, 0, 0);
+ }
+ .nr{
+ background-color: rgba(0, 0, 0, 0.132);
+ font-size: large;
+ }
+ .g{
+ background-color: rgba(0, 0, 0, 0.132);
+ font-size: large;
+
+ }
+ .l{
+ background-color: rgba(0, 0, 0, 0.132);
+ font-size: large;
+ }
+ th{
+ border-radius: 5px;
+ border-color: rgba(0, 0, 0, 0.349);
+ border-width: 4px;
+ font-size: xx-large;
+ background-color: rgba(0, 0, 0, 0.100);
+ }
+ .l:hover{
+ background-image: linear-gradient( rgba(255, 255, 255, 0.050), rgba(255, 255, 255, 0.205));
+ border-radius: 5px;
+ border-top: none;
+
+ }
+ th:hover{
+ background-image: linear-gradient( rgba(255, 255, 255, 0.050), rgba(255, 255, 255, 0.205));
+ border-radius: 5px;
+
+ }
+ .g:hover{
+ background-image: linear-gradient( rgba(255, 255, 255, 0.050), rgba(255, 255, 255, 0.205));
+ border-radius: 5px;
+ border-top: none;
+
+ }
+ .nr:hover{
+ background-image: linear-gradient( rgba(255, 255, 255, 0.050), rgba(255, 255, 255, 0.205));
+ border-radius: 5px;
+ border-top: none;
+
+ }

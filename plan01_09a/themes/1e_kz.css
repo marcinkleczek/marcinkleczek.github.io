@@ -1,0 +1,250 @@
+html {
+    background-image: linear-gradient(to top, rgb(35, 48, 97), rgb(20, 45, 124));
+    
+}
+body {
+    padding-top: 200px;
+    background-image:url("https://zskocjan.pl/wp-content/uploads/2019/01/zs3_380.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    color: rgb(214, 227, 243);
+    
+}
+
+
+@media screen and (min-width: 700px) {
+    .grider {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 700px) {
+
+    table table {
+        display: none;
+    }
+
+    .grider {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .grider div:empty {
+        /*display: none;*/
+    }
+    .grider div {
+        display: flex;
+        justify-content: flex-end;
+        
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+     th {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .grider div:nth-child(7n+1),
+    .grider div:nth-child(7n+2)
+    {
+        display: none;
+    }
+    .old-th {
+        font-size: 0px;
+    }
+
+
+    .grider div:nth-child(7n+1) {
+        order: 1;
+    }
+    .grider div:nth-child(7n+2) {
+        order: 2;
+    }
+    .grider div:nth-child(7n+3) {
+        order: 3;
+    }
+    .grider div:nth-child(7n+4) {
+        order: 4;
+    }
+    .grider div:nth-child(7n+5) {
+        order: 5;
+    }
+    .grider div:nth-child(7n+6) {
+        order: 6;
+    }
+    .grider div:nth-child(7n) {
+        order: 7;
+    }
+
+
+    .grider time {
+        width: 25%;
+    }
+    .grider article {
+        display: flex;
+        width: 75%;
+    }
+    .grider article .n {
+        flex-grow: 0;
+        flex-basis: 20%;
+        text-align: right;
+    }
+    .grider article .s {
+        flex-basis: 20%;
+        flex-grow: 0;
+        text-align: right;
+    }
+    .grider article .p {
+        flex-grow: 6;
+        text-align: right;
+    }
+
+
+
+    .grider {
+        font-family: Garamond, sans-serif;
+        font-weight: 500;
+    }
+    .old-th time {
+        display: none;
+    }
+    .old-th article {
+        /*background-color: red;*/
+        padding-top: 20px;
+        display: block;
+        text-align: left ;
+        padding-right: 20px;
+        margin-left: -20px;
+        font-size: 1.75rem;
+        line-height: 3rem;
+    }
+    .grider time {
+        color: rgb(214, 227, 243);
+        font-style: italic;
+    }
+    .old-td + .old-td {
+        border-top: 1px solid rgb(88, 151, 223);
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+    }
+}
+
+
+/* some minor tweaks */
+caption {
+    text-align: center;
+    width: 100%;
+}
+form {
+    min-width: 300px;
+    margin: auto;
+    width: 50vw;
+    text-align: center;
+}
+body > div > table {
+    width: 100%;
+    color:rgb(187, 216, 255);
+    font-weight: bold;
+    font-size: 60px;
+    font-style: italic;
+    text-shadow: 2px 2px 0 rgba(173, 199, 255, 0.63);
+
+
+}
+body > div > table table {
+    margin: auto;
+    border-color: rgb(88, 151, 223);
+    border-spacing: 10px;
+    border-style: ridge;
+    border-width: 10px;
+    font-size: 30px;
+
+
+}
+
+ 
+
+
+
+/* Only as example */
+.p-j-angielski, .p-r_angielski {
+    color: rgb(36, 69, 255);
+    font-style: italic;
+    text-shadow: 1px 1px 0 hsla(236, 100%, 68%, 0.486);
+}
+.p-geografia, .p-r_geografia {
+    color: rgb(152, 42, 255);
+    font-style: italic;
+    text-shadow: 1px 1px 0 rgba(167, 73, 255, 0.452);
+}
+
+.n {
+    color: rgb(183, 206, 236);
+    text-decoration: none;
+    text-align: right;
+
+
+}
+
+table table td:hover{
+    border-left: 2px;
+    border-right: 2px;
+    border-bottom: 2px;
+    border: 1px dotted rgb(0, 110, 255);
+    
+
+    
+}
+
+.s {
+    color: rgb(183, 206, 236);
+   
+    
+}
+td {
+    border-left: 0;
+    border-right: 0 ;
+    border-bottom: 0;
+    ali
+    
+}
+
+
+th {
+    border-left: 0;
+    border-right: 0 ;
+    border-top: 0;
+    border-bottom: 0;
+   
+}
+th:hover {
+    color: rgb(44, 128, 255);
+    text-shadow: 1px 1px 0 rgb(57, 149, 255);
+    border: 1px dotted rgb(0, 110, 255);
+}
+.s:hover {
+    color: rgb(66, 0, 248);
+    text-shadow: 1px 1px 0 rgba(66, 0, 248, 0.651) ;
+}
+
+.n:hover {
+    color: rgb(66, 0, 248);
+    text-shadow: 1px 1px 0 rgba(66, 0, 248, 0.651) ;
+}
+.p-j-angielski:hover, .p-r_angielski:hover {
+    color: rgb(91, 115, 255);
+    font-style: italic;
+    text-shadow: 1px 1px 0 hsla(236, 100%, 71%, 0.486);
+}
+.p-geografia:hover, .p-r_geografia:hover {
+    color: rgb(178, 96, 255);
+    font-style: italic;
+    text-shadow: 1px 1px 0 rgba(172, 83, 255, 0.452);
+}
+
+
+
