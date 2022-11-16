@@ -116,6 +116,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 			a.href += '?theme=' + theme;
 		})
 	}
+
+
+	document.addEventListener('keydown', () => {
+		let s = document.querySelector("#theme-selector select");
+		this.location = '?theme='+s.options[s.selectedIndex + 1].value;
+
+	});
 });
 
 function getTheme() {
