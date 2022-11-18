@@ -1,0 +1,40 @@
+@keyframes myfirst {
+    0%   {left: 0px; top: 0px;}
+    25%  { left:20% ; top: 0px;}
+    50%  {left:20% ; top:25% ;}
+    75%  { left:0px; top:25% ;}
+    100% { left: 0px; top: 0px;}
+  }
+
+*{
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+    display: in-line-block;
+    background-color: bisque;
+    color: rgb(41, 98, 145);
+}
+td{
+    border-color: red;
+
+
+}
+table{
+    border-color: red;
+
+}
+tr{
+    border-color: red;
+
+
+}
+th{
+    border-color: red;
+}
+div{
+    animation: myfirst 5s infinite;
+    position: relative;
+}

@@ -1,0 +1,269 @@
+@media screen and (min-width: 700px) {
+    .grider {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 700px) {
+
+    table table {
+        display: none;
+    }
+
+    .grider {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .grider div {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .grider div:nth-child(7n+1),
+    .grider div:nth-child(7n+2)
+    {
+        display: none;
+    }
+    .old-th {
+        font-size: 19px;
+    }
+
+
+    .grider div:nth-child(7n+1) {
+        order: 1;
+    }
+    .grider div:nth-child(7n+2) {
+        order: 2;
+    }
+    .grider div:nth-child(7n+3) {
+        order: 3;
+    }
+    .grider div:nth-child(7n+4) {
+        order: 4;
+    }
+    .grider div:nth-child(7n+5) {
+        order: 5;
+    }
+    .grider div:nth-child(7n+6) {
+        order: 6;
+    }
+    .grider div:nth-child(7n) {
+        order: 7;
+    }
+
+
+    .grider time {
+        width: 25%;
+    }
+    .grider article {
+        display: flex;
+        width: 75%;
+    }
+    .grider article .n {
+        flex-grow: 0;
+        flex-basis: 20%;
+        text-align: center;
+    }
+    .grider article .s {
+        flex-basis: 20%;
+        flex-grow: 0;
+        text-align: center;
+    }
+    .grider article .p {
+        flex-grow: 6;
+        text-align: right;
+    }
+
+
+
+    .grider {
+        font-family: Garamond, sans-serif;
+        font-weight: 500;
+    }
+    .old-th time {
+        display: none;
+    }
+    .old-th article {
+        /*background-color: red;*/
+        padding-top: 20px;
+        display: block;
+        text-align: right;
+        padding-right: 20px;
+        font-size: 1.75rem;
+        line-height: 3rem;
+    }
+    .grider time {
+        color: #aaa;
+        font-style: italic;
+    }
+    .old-td + .old-td {
+        border-top: 1px solid #ddd;
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+    }
+}
+
+/* some minor tweaks */
+td {
+    font-size: 15px;
+}
+
+caption {
+    text-align: center;
+    width: 100%;
+}
+form {
+    min-width: 300px;
+    margin: auto;
+    width: 50vw;
+    text-align: center;
+}
+body > div > table {
+    width: 100%;
+}
+body > div > table table {
+    margin: auto;
+}
+
+.n {
+    color: #669;
+    text-decoration: none;
+    text-align: right;
+    font-size: small;
+}
+
+.s {
+    color: #eef;
+    font-weight: 400;
+}
+
+/* 11.11.2022 */
+table, tr, td, th {
+    border: none;
+    border-collapse: collapse;
+    color: #ccf;
+    text-align: center;
+    font-family: 'Segoe UI';
+}
+
+th {
+    border-bottom: 2px solid #ccf;
+}
+
+table {
+    background: linear-gradient(58deg, rgb(27, 27, 69) 0%, #225 50%, rgb(27, 27, 69) 100%);
+    border-radius: 3%;
+    box-shadow: black 0 0 15px;
+}
+
+.l {
+    text-shadow: black 0 0 2px;
+}
+
+.l .p {
+    text-shadow: white 0 0 5px;
+}
+
+.l .p-pr-fin-przed {
+    text-shadow: rgb(184, 247, 156) 0 0 5px;
+}
+
+.l .p-wf {
+    text-shadow: cyan 0 0 5px;
+}
+
+.l .p-wf::before {
+    content: "⛹";
+    display: inline;
+    text-shadow: none;
+    font-size: x-large;
+}
+
+.l .p-matematyka, .l .p-r_matematyka {
+    text-shadow: rgb(16, 9, 222) 0 0 5px;
+}
+
+.l .p-matematyka::before, .l .p-r_matematyka::before {
+    content: "➗";
+    display: inline;
+    text-shadow: none;
+    font-size: x-large;
+}
+
+.l .p-j-polski {
+    text-shadow: rgb(255, 208, 0) 0 0 5px;
+}
+
+.l .p-geografia, .p-r_geografia {
+    text-shadow: rgb(48, 179, 5) 0 0 5px;
+}
+
+.l .p-j-angielski {
+    text-shadow: red 0 0 5px;
+}
+
+.l .p-religia {
+    text-shadow: magenta 0 0 5px;
+}
+
+.l .p-u_hist-isp- {
+    text-shadow:rgb(255, 145, 49) 0 0 5px;
+}
+
+td a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+tr {
+    font-weight: 100;
+}
+
+td.g {
+    border-right: 2px solid #ccf;
+    border-left: 2px solid #ccf;
+}
+
+th, tr td.g, tr td.nr {
+    font-weight: 600;
+}
+
+tr td:nth-child(2n), th {
+    background: #336;
+}
+
+tr td:nth-child(2n+1) {
+    background: none;
+}
+
+tr:nth-child(2n) td:nth-child(2n), tr:nth-child(2n+1) {
+    background: rgba(51, 51, 102, 0.4)
+}
+
+tbody tr:nth-child(2n-1) {
+    /*border: 2px solid #336;*/
+    border-right: none;
+    border-left: none;
+}
+
+th:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+th:nth-last-child(1) {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+caption {
+    font-size: xx-large;
+    font-family: 'Segoe UI';
+    font-weight: 300;
+    color: #225;
+    background-color: #99c;
+}

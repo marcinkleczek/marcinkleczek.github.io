@@ -1,0 +1,60 @@
+.divg{
+    width: 100%;
+    background-color: blueviolet;
+    height: 60px;
+}
+.gora{
+    float: left;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    width: 7%;
+    color: aliceblue;
+    font-size: 20px;
+    align-content: center;
+}
+.gora1{
+    float: left;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    width: 7%;
+    color: aliceblue;
+    font-size: 20px;
+}
+.gora1:hover{
+    background-color: brown;
+}
+li{
+  list-style: none;
+}
+article{
+    padding-top:15%;
+}
+p{
+    width: 45%;
+}
+.B{
+color: grey;
+}
+a {
+    text-decoration: none;
+    width: 25%;
+    flex-direction: column;
+    padding-bottom: 15px;
+   color: black;
+}
+footer{
+    display: flex;
+}
+h1.W{
+    width: 20%;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.div1{
+padding-left: 57px;
+}

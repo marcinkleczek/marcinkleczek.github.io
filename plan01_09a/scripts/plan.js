@@ -118,10 +118,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	}
 
 
-	document.addEventListener('keydown', () => {
-		let s = document.querySelector("#theme-selector select");
-		this.location = '?theme='+s.options[s.selectedIndex + 1].value;
-
+	document.addEventListener('keydown', (e) => {
+		if (e.key === 'ArrowRight') {
+			let s = document.querySelector("#theme-selector select");
+			this.location = '?theme='+s.options[s.selectedIndex + 1].value;
+		}
+		if (e.key === 'ArrowLeft') {
+			let s = document.querySelector("#theme-selector select");
+			this.location = '?theme='+s.options[s.selectedIndex - 1].value;
+		}
 	});
 });
 
