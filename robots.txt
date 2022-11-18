@@ -1,0 +1,3 @@
+# flag{robots_spectator}
+User-agent: *
+Allow: *
